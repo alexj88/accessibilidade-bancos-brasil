@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+                accessibility: {
+                    high: '#22c55e',    // Green for high accessibility
+                    medium: '#f59e0b',  // Amber for medium accessibility
+                    low: '#ef4444',     // Red for low accessibility
+                    main: '#8b5cf6',    // Purple for main theme color
+                    accent: '#6366f1',  // Indigo for accent
+                },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
