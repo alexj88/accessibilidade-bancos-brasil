@@ -14,7 +14,7 @@ export const banks: Bank[] = [
   {
     id: 1,
     name: "Banco do Brasil",
-    website: "https://www.bb.com.br",
+    website: "https://www.bb.com.br/site/investimentos",
     accessibilityScore: 85,
     wcagCompliance: 'AA',
     category: 'Bank',
@@ -24,7 +24,7 @@ export const banks: Bank[] = [
   {
     id: 2,
     name: "Itaú",
-    website: "https://www.itau.com.br",
+    website: "https://www.itau.com.br/investimentos",
     accessibilityScore: 92,
     wcagCompliance: 'AAA',
     category: 'Bank',
@@ -34,7 +34,7 @@ export const banks: Bank[] = [
   {
     id: 3,
     name: "Bradesco",
-    website: "https://www.bradesco.com.br",
+    website: "https://banco.bradesco/html/classic/portal-investimentos/index.shtm",
     accessibilityScore: 78,
     wcagCompliance: 'AA',
     category: 'Bank',
@@ -44,7 +44,7 @@ export const banks: Bank[] = [
   {
     id: 4,
     name: "Nubank",
-    website: "https://nubank.com.br",
+    website: "https://nubank.com.br/nu/investimentos",
     accessibilityScore: 88,
     wcagCompliance: 'AA',
     category: 'Bank',
@@ -84,7 +84,7 @@ export const banks: Bank[] = [
   {
     id: 8,
     name: "Santander",
-    website: "https://www.santander.com.br",
+    website: "https://www.santander.com.br/banco/investimentos",
     accessibilityScore: 80,
     wcagCompliance: 'AA',
     category: 'Bank',
