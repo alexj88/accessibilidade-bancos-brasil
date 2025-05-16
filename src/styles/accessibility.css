@@ -1,0 +1,50 @@
+/* Monochrome Mode */
+.monochrome-mode {
+  filter: grayscale(100%) !important;
+}
+
+/* Dark Contrast Mode */
+.dark-contrast-mode {
+  filter: contrast(150%) !important;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.dark-contrast-mode a,
+.dark-contrast-mode button:not(.bg-purple-600),
+.dark-contrast-mode h1,
+.dark-contrast-mode h2,
+.dark-contrast-mode h3,
+.dark-contrast-mode h4,
+.dark-contrast-mode h5,
+.dark-contrast-mode h6 {
+  color: #ffff00 !important;
+}
+
+.dark-contrast-mode img,
+.dark-contrast-mode svg {
+  filter: brightness(0.8) contrast(120%) !important;
+}
+
+/* Light Contrast Mode */
+.light-contrast-mode {
+  filter: contrast(150%) !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.light-contrast-mode a,
+.light-contrast-mode button:not(.bg-purple-600),
+.light-contrast-mode h1,
+.light-contrast-mode h2,
+.light-contrast-mode h3,
+.light-contrast-mode h4,
+.light-contrast-mode h5,
+.light-contrast-mode h6 {
+  color: #0000ff !important;
+}
+
+.light-contrast-mode img,
+.light-contrast-mode svg {
+  filter: brightness(0.9) contrast(120%) !important;
+}
