@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
             <Accessibility size={24} className="text-accessibility-main" />
-            <span className="text-lg font-semibold">Acessibilidade Digital Brasil</span>
+            <span className="text-lg font-semibold">AcessInvest</span>
           </div>
           
           <div className="text-sm text-gray-600 text-center md:text-right">
