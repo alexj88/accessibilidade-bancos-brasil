@@ -16,9 +16,9 @@ const AccessibilityStats = () => {
   };
 
   const categories = {
-    'Bank': banks.filter(bank => bank.category === 'Bank').length,
-    'Brokerage': banks.filter(bank => bank.category === 'Brokerage').length,
-    'Both': banks.filter(bank => bank.category === 'Both').length,
+    'banco': banks.filter(bank => bank.category === 'banco').length,
+    'Corretoras': banks.filter(bank => bank.category === 'Corretoras').length,
+    'Ambos': banks.filter(bank => bank.category === 'Ambos').length,
   };
 
   return (
@@ -86,15 +86,15 @@ const AccessibilityStats = () => {
           <div className="space-y-2 mt-3">
             <div className="flex justify-between items-center">
               <span className="text-sm">Bancos</span>
-              <span className="font-semibold">{categories.Bank}</span>
+              <span className="font-semibold">{categories.banco}</span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-sm">Corretoras</span>
-              <span className="font-semibold">{categories.Brokerage}</span>
+              <span className="font-semibold">{categories.Corretoras}</span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-sm">Ambos</span>
-              <span className="font-semibold">{categories.Both}</span>
+              <span className="font-semibold">{categories.Ambos}</span>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 
 import { useState } from "react";
-import { Bank, banks } from "../data/bankData";
-import { SortDirection, SortField, sortBanks } from "../utils/sortRanking";
+import { banco, banks } from "../data/bankData";
+import { SortDirection, SortField, sortbancos } from "../utils/sortRanking";
 import RankingItem from "./RankingItem";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -14,7 +14,7 @@ const AccessibilityRanking = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   // Filter and sort the banks
-  const filteredBanks = banks
+  const filteredbancos = banks
     .filter((bank) => {
       // Apply category filter
       if (filterCategory !== "all" && bank.category !== filterCategory) {
@@ -32,7 +32,7 @@ const AccessibilityRanking = () => {
       return true;
     });
     
-  const sortedBanks = sortBanks(filteredBanks, sortField, sortDirection);
+  const sortedbancos = sortbancos(filteredbancos, sortField, sortDirection);
 
   const handleSort = (field: SortField) => {
     if (field === sortField) {
@@ -77,10 +77,10 @@ const AccessibilityRanking = () => {
                 <SelectValue placeholder="Categoria" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">Todas Categorias</SelectItem>
-                <SelectItem value="Bank">Bancos</SelectItem>
-                <SelectItem value="Brokerage">Corretoras</SelectItem>
-                <SelectItem value="Both">Ambos</SelectItem>
+                <SelectItem value="Todas">Todas Categorias</SelectItem>
+                <SelectItem value="Bancos">Bancos</SelectItem>
+                <SelectItem value="Corretoras">Corretoras</SelectItem>
+                <SelectItem value="Ambos">Ambos</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -114,11 +114,11 @@ const AccessibilityRanking = () => {
 
         <div className="mt-4">
           <div className="text-sm text-gray-500 mb-2">
-            Exibindo {sortedBanks.length} de {banks.length} instituições
+            Exibindo {sortedbancos.length} de {banks.length} instituições
           </div>
           
-          {sortedBanks.length > 0 ? (
-            sortedBanks.map((bank, index) => (
+          {sortedbancos.length > 0 ? (
+            sortedbancos.map((bank, index) => (
               <RankingItem 
                 key={bank.id} 
                 bank={bank} 

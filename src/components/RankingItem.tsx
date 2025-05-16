@@ -1,12 +1,12 @@
 
 import { ExternalLink } from "lucide-react";
-import { Bank } from "../data/bankData";
+import { banco } from "../data/bankData";
 import { getAccessibilityColorClass } from "../utils/sortRanking";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 interface RankingItemProps {
-  bank: Bank;
+  bank: banco;
   rank: number;
 }
 

@@ -1,23 +1,23 @@
 
-export interface Bank {
+export interface banco {
   id: number;
   name: string;
   website: string;
   accessibilityScore: number;
   wcagCompliance: 'A' | 'AA' | 'AAA' | 'None';
-  category: 'Bank' | 'Brokerage' | 'Both';
+  category: 'Banco' | 'Corretoras' | 'Ambos';
   features: string[];
   lastUpdated: string;
 }
 
-export const banks: Bank[] = [
+export const banks: banco[] = [
   {
     id: 1,
     name: "Banco do Brasil",
     website: "https://www.bb.com.br/site/investimentos",
     accessibilityScore: 85,
     wcagCompliance: 'AA',
-    category: 'Bank',
+    category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Color contrast compliance'],
     lastUpdated: "2023-12-15"
   },
@@ -27,7 +27,7 @@ export const banks: Bank[] = [
     website: "https://www.itau.com.br/investimentos",
     accessibilityScore: 92,
     wcagCompliance: 'AAA',
-    category: 'Bank',
+    category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Color contrast compliance', 'Text resizing', 'Voice commands'],
     lastUpdated: "2024-01-20"
   },
@@ -37,7 +37,7 @@ export const banks: Bank[] = [
     website: "https://banco.bradesco/html/classic/portal-investimentos/index.shtm",
     accessibilityScore: 78,
     wcagCompliance: 'AA',
-    category: 'Bank',
+    category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'High contrast mode'],
     lastUpdated: "2023-11-10"
   },
@@ -47,7 +47,7 @@ export const banks: Bank[] = [
     website: "https://nubank.com.br/nu/investimentos",
     accessibilityScore: 88,
     wcagCompliance: 'AA',
-    category: 'Bank',
+    category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Color contrast compliance', 'Simple navigation'],
     lastUpdated: "2024-02-05"
   },
@@ -57,7 +57,7 @@ export const banks: Bank[] = [
     website: "https://www.xpi.com.br",
     accessibilityScore: 82,
     wcagCompliance: 'AA',
-    category: 'Brokerage',
+    category: 'Corretoras',
     features: ['Screen reader support', 'Keyboard navigation', 'Form labels'],
     lastUpdated: "2024-01-15"
   },
@@ -67,7 +67,7 @@ export const banks: Bank[] = [
     website: "https://www.btgpactual.com",
     accessibilityScore: 75,
     wcagCompliance: 'A',
-    category: 'Both',
+    category: 'Ambos',
     features: ['Keyboard navigation', 'ALT text for images'],
     lastUpdated: "2023-10-25"
   },
@@ -77,7 +77,7 @@ export const banks: Bank[] = [
     website: "https://www.caixa.gov.br",
     accessibilityScore: 89,
     wcagCompliance: 'AA',
-    category: 'Bank',
+    category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Text alternatives', 'Form labels', 'Skip navigation'],
     lastUpdated: "2024-02-12"
   },
@@ -87,7 +87,7 @@ export const banks: Bank[] = [
     website: "https://www.santander.com.br/banco/investimentos",
     accessibilityScore: 80,
     wcagCompliance: 'AA',
-    category: 'Bank',
+    category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Color contrast compliance'],
     lastUpdated: "2023-12-05"
   },
@@ -97,7 +97,7 @@ export const banks: Bank[] = [
     website: "https://www.rico.com.vc",
     accessibilityScore: 68,
     wcagCompliance: 'A',
-    category: 'Brokerage',
+    category: 'Corretoras',
     features: ['ALT text for images', 'Descriptive links'],
     lastUpdated: "2023-09-30"
   },
@@ -107,7 +107,7 @@ export const banks: Bank[] = [
     website: "https://www.bancointer.com.br",
     accessibilityScore: 84,
     wcagCompliance: 'AA',
-    category: 'Both',
+    category: 'Ambos',
     features: ['Screen reader support', 'Keyboard navigation', 'ARIA landmarks'],
     lastUpdated: "2024-01-08"
   },
@@ -117,7 +117,7 @@ export const banks: Bank[] = [
     website: "https://www.clear.com.br",
     accessibilityScore: 65,
     wcagCompliance: 'A',
-    category: 'Brokerage',
+    category: 'Corretoras',
     features: ['Keyboard navigation', 'ALT text for images'],
     lastUpdated: "2023-08-15"
   },
@@ -127,7 +127,7 @@ export const banks: Bank[] = [
     website: "https://www.modalmais.com.br",
     accessibilityScore: 60,
     wcagCompliance: 'A',
-    category: 'Brokerage',
+    category: 'Corretoras',
     features: ['ALT text for images', 'Basic keyboard navigation'],
     lastUpdated: "2023-07-20"
   }

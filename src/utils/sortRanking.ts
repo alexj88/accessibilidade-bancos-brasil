@@ -1,10 +1,10 @@
 
-import { Bank } from "../data/bankData";
+import { banco } from "../data/bankData";
 
 export type SortField = 'name' | 'accessibilityScore' | 'wcagCompliance' | 'category' | 'lastUpdated';
 export type SortDirection = 'asc' | 'desc';
 
-export const sortBanks = (banks: Bank[], field: SortField, direction: SortDirection): Bank[] => {
+export const sortbancos = (banks: banco[], field: SortField, direction: SortDirection): banco[] => {
   return [...banks].sort((a, b) => {
     let comparison = 0;
     
