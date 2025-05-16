@@ -7,19 +7,24 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
+            
+            <Accessibility size={40} />
+            <div>
+              <h1 className="text-2xl md:text-4xl font-bold">AcessInvest</h1>
+              <p className="text-sm md:text-base opacity-90">Ranking de acessibilidade de bancos e corretoras</p>
+            </div>
+          </div>
+          <div>
+            <section id="Home">
             <p>
-              <span className="flex flex-col items-center font-bold ml:px-12">Menu</span>
+              {/* <span className="flex flex-col items-center font-bold ml:px-12">Menu</span> */}
             <ul className="flex flex-col md:flex-row items-center justify-between gap-4">
               <a href="#Home"><li>Home</li></a>
               <a href="#Ranking"><li>Ranking</li></a>
               <a href="#Contatos"><li>Contatos</li></a>
             </ul>
             </p>
-            <Accessibility size={40} />
-            <div>
-              <h1 className="text-2xl md:text-4xl font-bold">AcessInvest</h1>
-              <p className="text-sm md:text-base opacity-90">Ranking de acessibilidade de bancos e corretoras</p>
-            </div>
+            </section>
           </div>
           
           <p className="text-sm md:text-base max-w-md text-center md:text-right">

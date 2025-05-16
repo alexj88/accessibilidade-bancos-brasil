@@ -26,7 +26,7 @@ const Footer = () => {
         
         <div className="mt-6 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center">
           <p>
-            © {new Date().getFullYear()} Acessibilidade Digital Brasil. Todos os direitos reservados.
+            © {new Date().getFullYear()} AcessInvest. Todos os direitos reservados.
           </p>
           <p className="mt-1">
             Os dados deste ranking são baseados em análises independentes de conformidade com WCAG 2.1.
