@@ -44,7 +44,8 @@ const AccessibilityRanking = () => {
   };
 
   return (
-    <div>
+  <div>
+    <section id="Ranking">
       <div className="bg-white p-6 rounded-lg shadow-md mb-6">
         <h2 className="text-2xl font-bold mb-4">Ranking de Acessibilidade</h2>
         <p className="text-gray-600 mb-6">
@@ -132,7 +133,8 @@ const AccessibilityRanking = () => {
           )}
         </div>
       </div>
-    </div>
+  </section>
+</div>
   );
 };
 

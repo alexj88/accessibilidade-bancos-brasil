@@ -16,7 +16,7 @@ const AccessibilityStats = () => {
   };
 
   const categories = {
-    'banco': banks.filter(bank => bank.category === 'banco').length,
+    'banco': banks.filter(bank => bank.category === 'Banco').length,
     'Corretoras': banks.filter(bank => bank.category === 'Corretoras').length,
     'Ambos': banks.filter(bank => bank.category === 'Ambos').length,
   };

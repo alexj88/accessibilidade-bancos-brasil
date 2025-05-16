@@ -3,6 +3,7 @@ import { Accessibility, Github, Heart } from "lucide-react";
 
 const Footer = () => {
   return (
+  <section id="Contatos">
     <footer className="bg-gray-100 py-8 px-4">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
@@ -18,7 +19,7 @@ const Footer = () => {
             <p className="flex items-center justify-center md:justify-end gap-1">
               Desenvolvido com <Heart size={16} className="text-accessibility-low" /> por 
               <a href="#" className="text-accessibility-accent hover:underline ml-1">
-                Acessibilidade Digital
+                AcessInvest
               </a>
             </p>
           </div>
@@ -34,6 +35,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+</section>
   );
 };
 
