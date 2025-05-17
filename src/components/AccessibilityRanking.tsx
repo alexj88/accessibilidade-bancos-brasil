@@ -10,7 +10,7 @@ import { ArrowDownUp, Search } from "lucide-react";
 const AccessibilityRanking = () => {
   const [sortField, setSortField] = useState<SortField>("accessibilityScore");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
-  const [filterCategory, setFilterCategory] = useState<string>("all");
+  const [filterCategory, setFilterCategory] = useState<string>("Todas");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   // Filter and sort the banks
@@ -75,7 +75,7 @@ const AccessibilityRanking = () => {
               onValueChange={setFilterCategory}
             >
               <SelectTrigger defaultValue="Banco">
-                <SelectValue placeholder="Categoria"  />
+                <SelectValue placeholder="Categoria" defaultValue={"Todas"}  />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="Todas" >Todas Categorias</SelectItem>

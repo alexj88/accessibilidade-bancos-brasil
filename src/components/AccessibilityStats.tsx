@@ -86,7 +86,7 @@ const AccessibilityStats = () => {
           <div className="space-y-2 mt-3">
             <div className="flex justify-between items-center">
               <span className="text-sm">Bancos</span>
-              <span className="font-semibold">{categories.banco}</span>
+              <span className="font-semibold">{categories.Banco}</span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-sm">Corretoras</span>
