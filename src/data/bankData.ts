@@ -15,8 +15,8 @@ export const banks: banco[] = [
     id: 1,
     name: "Banco do Brasil",
     website: "https://www.bb.com.br/site/investimentos",
-    accessibilityScore: 85,
-    wcagCompliance: 'AA',
+    accessibilityScore: 99,
+    wcagCompliance: 'AAA',
     category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Color contrast compliance'],
     lastUpdated: "2023-12-15"
