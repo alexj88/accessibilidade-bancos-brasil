@@ -17,7 +17,7 @@ const AccessibilityRanking = () => {
   const filteredbancos = banks
     .filter((bank) => {
       // Apply category filter
-      if (filterCategory !== "all" && bank.category !== filterCategory) {
+      if (filterCategory !== "Todas" && bank.category !== filterCategory) {
         return false;
       }
       
@@ -74,12 +74,12 @@ const AccessibilityRanking = () => {
               value={filterCategory}
               onValueChange={setFilterCategory}
             >
-              <SelectTrigger>
-                <SelectValue placeholder="Categoria" />
+              <SelectTrigger defaultValue="Banco">
+                <SelectValue placeholder="Categoria"  />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="Todas">Todas Categorias</SelectItem>
-                <SelectItem value="Bancos">Bancos</SelectItem>
+                <SelectItem value="Todas" >Todas Categorias</SelectItem>
+                <SelectItem value="Banco">Bancos</SelectItem>
                 <SelectItem value="Corretoras">Corretoras</SelectItem>
                 <SelectItem value="Ambos">Ambos</SelectItem>
               </SelectContent>
