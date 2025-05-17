@@ -1,73 +1,57 @@
-# Welcome to your Lovable project
+# AcessInvest
+## Accessibilidade em Bancos Brasileiros  
 
-## Project info
+Este projeto visa analisar e melhorar a acessibilidade digital nos bancos do Brasil, garantindo que todos os usuários, incluindo pessoas com deficiência, possam utilizar os serviços bancários online de forma igualitária.
 
-**URL**: https://lovable.dev/projects/95429273-bd52-4c48-8da8-f689b6bb906c
+## 📌 Objetivos  
 
-## How can I edit this code?
+- ✅ Avaliar o nível de acessibilidade dos principais bancos brasileiros  
+- 🔍 Identificar barreiras comuns enfrentadas por usuários com deficiência  
+- 🛠️ Fornecer recomendações para melhorias  
+- ♿ Promover a inclusão digital no setor bancário  
 
-There are several ways of editing your application.
+## 🔬 Metodologia  
 
-**Use Lovable**
+O projeto utiliza uma combinação de:  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/95429273-bd52-4c48-8da8-f689b6bb906c) and start prompting.
+1. **Avaliação técnica** com ferramentas automatizadas  
+2. **Testes com usuários** reais com diferentes tipos de deficiência  
+3. **Análise manual** de conformidade com as diretrizes WCAG e o e-MAG  
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🏦 Bancos Analisados  
 
-**Use your preferred IDE**
+- Banco do Brasil  
+- Itaú  
+- Bradesco  
+- Santander  
+- Caixa Econômica Federal  
+- Nubank  
+- Banco Inter  
+- Outras instituições financeiras  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🤝 Como Contribuir  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. 🍴 Faça um *fork* do projeto  
+2. 🧪 Realize testes em sites/apps bancários  
+3. 📝 Documente suas descobertas  
+4. 🔄 Envie um *pull request* com suas contribuições  
 
-Follow these steps:
+## ⚙️ Requisitos  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Conhecimento básico de acessibilidade web  
+- Ferramentas brasileiras de acessibilidade:
+  - [ASES Web](https://asesweb.governoeletronico.gov.br/) - Avaliador e Simulador de Acessibilidade Sítios
+  - [DaSilva](https://www.dasilva.org.br/) - Ferramenta de avaliação de acessibilidade
+  - [NVDA em Português](https://www.nvaccess.org/download/) - Leitor de tela gratuito
+  - [VLibras](https://www.vlibras.gov.br/) - Suite de ferramentas para acessibilidade de surdos
+- Dispositivos com diferentes configurações de acessibilidade  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📜 Licença  
 
-# Step 3: Install the necessary dependencies.
-npm i
+Este projeto é licenciado sob a **[MIT License](LICENSE)**.  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📩 Contato  
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/95429273-bd52-4c48-8da8-f689b6bb906c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Para dúvidas ou sugestões:  
+- 📥 Abra uma *issue* no repositório  
+- ✉️ Entre em contato com o mantenedor do projeto  
