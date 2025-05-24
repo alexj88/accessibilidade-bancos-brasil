@@ -38,7 +38,8 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <Button 
                   variant={activeMode === 'monochrome' ? 'default' : 'outline'} 
-                  onClick={() => setColorMode('monochrome')}
+                  // onClick={() => setColorMode('monochrome')}
+                  onClick={() => setColorMode(activeMode === 'monochrome' ? 'normal' : 'monochrome')}
                   className="flex flex-col gap-2 h-auto py-3 items-center justify-center"
                 >
                   <div className="w-4 h-4 rounded-full bg-gray-400 mb-1"></div>
@@ -46,7 +47,8 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
                 </Button>
                 <Button 
                   variant={activeMode === 'dark-contrast' ? 'default' : 'outline'} 
-                  onClick={() => setColorMode('dark-contrast')}
+                  // onClick={() => setColorMode('dark-contrast')}
+                  onClick={() => setColorMode(activeMode === 'dark-contrast' ? 'normal' : 'dark-contrast')}
                   className="flex flex-col gap-2 h-auto py-3 items-center justify-center"
                 >
                   <div className="w-4 h-4 rounded-full bg-black mb-1"></div>
@@ -54,7 +56,8 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
                 </Button>
                 <Button 
                   variant={activeMode === 'light-contrast' ? 'default' : 'outline'} 
-                  onClick={() => setColorMode('light-contrast')}
+                  // onClick={() => setColorMode('light-contrast')}
+                  onClick={() => setColorMode(activeMode === 'light-contrast' ? 'normal' : 'light-contrast')}
                   className="flex flex-col gap-2 h-auto py-3 items-center justify-center"
                 >
                   {/* <div className="w-6 h-6 rounded-full bg-white border-2 border-gray-300 mb-1"></div> */}
