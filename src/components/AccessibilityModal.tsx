@@ -6,6 +6,7 @@ import { useColorAdjustment } from '../hooks/useColorAdjustment';
 import { Button } from '@/components/ui/button';
 import { ArrowDown01, Contrast, Accessibility, Keyboard, KeyboardIcon, MoonIcon, Grid3x3Icon, Ear, Speech, Volume2 } from 'lucide-react';
 
+
 interface AccessibilityModalProps {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
@@ -16,24 +17,24 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="  sm:max-w-md ">
-        <DialogHeader>
+      <DialogContent className="  sm:max-w-md">
+        <DialogHeader className='h-auto'>
             
           <DialogTitle className="text-2xl font-bold flex items-center ">
             <Accessibility className="h-10 w-10 py" />
-           <span className='m-2'> Ajustes de Acessibilidade</span>
+           <span className='m-2 text-2xl'> Ajustes de Acessibilidade</span>
           </DialogTitle>
         </DialogHeader>
         <Tabs defaultValue="color" className="w-full">
           <TabsList className="grid w-full grid-cols-1">
-            <TabsTrigger value="color" className="flex items-center gap-2">
-              <Contrast className="h-4 w-4" />
+            <TabsTrigger value="color" className="flex items-center gap-2 text-xl">
+              <Contrast className="h-6 w-6" />
               Ajustes de Cor
             </TabsTrigger>
           </TabsList>
           <TabsContent value="color" className="py-4">
             <div className="flex flex-col gap-4">
-              <h3 className="font-medium">Contraste</h3>
+              <h3 className="text-lg text-center strong">Contraste</h3>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <Button 
                   variant={activeMode === 'monochrome' ? 'default' : 'outline'} 
@@ -57,7 +58,7 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
                   className="flex flex-col gap-2 h-auto py-3 items-center justify-center"
                 >
                   {/* <div className="w-6 h-6 rounded-full bg-white border-2 border-gray-300 mb-1"></div> */}
-                  <MoonIcon className="h-4 w-4" />
+                  <MoonIcon className="h-auto w-auto" />
                   <span className=' text-wrap'>Alto Contraste Claro</span>
                 </Button>
               </div>
@@ -69,8 +70,8 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
               </div> */}
             </div>
             <TabsList className="grid w-full grid-cols-1">
-            <TabsTrigger value="color" className="flex items-center gap-2">
-              <Speech className="flex items-center h-4 w-4" />
+            <TabsTrigger value="color" className="flex items-center gap-2 text-xl">
+              <Speech className="flex items-center h-6 w-6" />
               Ajustes de Voz e Navegação
             </TabsTrigger>
           </TabsList>
@@ -79,17 +80,17 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
               {/* <h3 className="font-medium">Contraste</h3> */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <Button 
-                  variant={activeMode === 'monochrome' ? 'default' : 'outline'} 
-                //   onClick={() => setColorMode('monochrome')}
+                  variant='outline' 
+                  // onClick={() => setColorMode('mono')}
                   className="flex flex-col gap-2 h-auto py-3 items-center justify-center"
                 >
                   {/* <div className="w-6 h-6 rounded bg-gray-400 mb-1"></div> */}
-                  <Ear className="h-4 w-4" />
+                  <Ear className="h-5 w-10" />
                   <p className='flex flex-row text-wrap items-center-justify wrap'>Ajuste de Leitor de Tela</p>
                 </Button>
                 <Button 
                 
-                  variant={activeMode === 'dark-contrast' ? 'default' : 'outline'} 
+                  variant='outline'
                 //   onClick={() => setColorMode('dark-contrast')}
                   className="flex flex-col gap-2 h-auto py-3 items-center justify-center"
                 >
@@ -98,7 +99,7 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
                   <p className='p-1 flex flex-row text-wrap items-center-justify wrap'>Navegação de Teclado</p>
                 </Button>
                 <Button 
-                  variant={activeMode === 'light-contrast' ? 'default' : 'outline'} 
+                  variant='outline' 
                 //   onClick={() => setColorMode('light-contrast')}
                   className="flex flex-col gap-2 h-auto py-3 items-center text-wrap justify-center"
                 >
@@ -107,16 +108,18 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
                   <span className='flex flex-wrap text-wrap'>Grade de Rato</span>
                 </Button>
                 <Button 
-                  variant={activeMode === 'light-contrast' ? 'default' : 'outline'} 
+                    variant='outline'
+                  // variant={activeMode === 'light-contrast' ? 'default' : 'outline'} 
                 //   onClick={() => setColorMode('light-contrast')}
-                  className="flex flex-row gap-2 h-auto py-3 items-center justify-center text-wrap text-sm"
+                  className="flex  gap-2 h-auto py-3 items-center justify-center text-wrap text-sm"
                 >
                   {/* <div className="w-6 h-6 rounded-full bg-white border-2 border-gray-300 mb-1"></div> */}
                   <ArrowDown01 className='h-4 w-4'/>
-                  <span className='flex flex-wrap text-wrap'>Navegação Inteligente</span>
+                  <span className='flex text-wrap'>Navegação Inteligente</span>
                 </Button>
                 <Button 
-                  variant={activeMode === 'light-contrast' ? 'default' : 'outline'} 
+                  variant='outline'
+                  // variant={activeMode === 'light-contrast' ? 'default' : 'outline'} 
                 //   onClick={() => setColorMode('light-contrast')}
                   className="flex flex-col gap-2 h-auto py-3 items-center justify-center"
                 >
@@ -125,7 +128,7 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
                   <span>Leitor de Texto</span>
                 </Button>
                 <Button 
-                  variant={activeMode === 'light-contrast' ? 'default' : 'outline'} 
+                  variant='outline'
                 //   onClick={() => setColorMode('light-contrast')}
                   className="flex flex-col gap-2 h-auto py-3 items-center justify-center"
                 >
@@ -138,7 +141,7 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
               
               
               <div className="flex justify-end mt-4">
-                <Button variant="outline" onClick={resetColorMode} className="mr-2 hover:bg-red-100">
+                <Button variant="outline" onClick={resetColorMode} className="mr-10  hover:bg-red-100 w-52  bg-black text-white text-lg">
                   Restaurar Padrão
                 </Button>
               </div>
