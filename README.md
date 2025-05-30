@@ -39,11 +39,16 @@ O único requisito é ter [Node.js](https://nodejs.org/) (recomendado v18+) , np
    ```bash
    git clone https://github.com/alexj88/accessibilidade-bancos-brasil.git
    cd accessibilidade-bancos-brasil
-  **Instale as dependências:**
+2. **Instale as dependências:**
+   ```bash
    npm install
-  **Inicie o servidor de desenvolvimento:**
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
    npm run dev
-  **O projeto estará disponível em http://localhost:8080**
+6. **O projeto estará disponível em**
+      ```bash
+      http://localhost:8080
+7. **Cole a url acima no navegador de sua preferência**
   
 ## 🔧 Tecnologias Utilizadas
 
