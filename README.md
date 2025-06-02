@@ -16,7 +16,8 @@ O projeto utiliza uma combinação de:
 
 1. **Avaliação técnica** com ferramentas automatizadas  
 2. **Testes com usuários** reais com diferentes tipos de deficiência  
-3. **Análise manual** de conformidade com as diretrizes WCAG e o e-MAG  
+3. **Análise manual** de conformidade com as diretrizes WCAG e o e-MAG
+
 
 ## 🏦 Bancos Analisados  
 
@@ -27,7 +28,37 @@ O projeto utiliza uma combinação de:
 - Caixa Econômica Federal  
 - Nubank  
 - Banco Inter  
-- Outras instituições financeiras  
+- Outras instituições financeiras
+## 🚀 Como Executar Localmente
+
+O único requisito é ter [Node.js](https://nodejs.org/) (recomendado v18+) , npm e um navegador de sua preferência instalados.
+
+### Passos para desenvolvimento:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/alexj88/accessibilidade-bancos-brasil.git
+   cd accessibilidade-bancos-brasil
+2. **Instale as dependências:**
+   ```bash
+   npm install
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+6. **O projeto estará disponível em**
+      ```bash
+      http://localhost:8080
+7. **Cole a url acima no navegador de sua preferência**
+  
+## 🔧 Tecnologias Utilizadas
+
+- [Vite](https://vitejs.dev/) – Frontend Tooling  
+- [React](https://react.dev/) – Biblioteca JavaScript  
+- [TypeScript](https://www.typescriptlang.org/) – Tipagem estática  
+- [Tailwind CSS](https://tailwindcss.com/) – Estilização  
+- [shadcn/ui](https://ui.shadcn.com/) – Componentes UI acessíveis  
+- [Radix UI](https://www.radix-ui.com/) – Componentes primitivos acessíveis
+
 
 ## 🤝 Como Contribuir  
 
