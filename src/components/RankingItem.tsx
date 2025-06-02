@@ -54,7 +54,7 @@ const RankingItem = ({ bank, rank }: RankingItemProps) => {
           </div>
         </div>
         
-        <Button asChild className="w-full md:w-auto">
+        <Button asChild className="w-full md:w-auto btn-as-link">
           <a href={bank.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
             Acessar Site <ExternalLink size={16} />
           </a>

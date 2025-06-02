@@ -11,6 +11,12 @@
   --lm-bg: #fff;
   --lm-text: #000;
   --lm-accent: #0000ff;
+  --dm-bg: #000000;
+  --dm-text: #ffffff;
+  --dm-accent: #ffff00; /* Amarelo para melhor visibilidade */
+  --lm-bg: #ffffff;
+  --lm-text: #000000;
+  --lm-accent: #0066cc; /* Azul mais acessível */
 }
 
 /* Classes base para os modos */
@@ -73,4 +79,42 @@
   background-color: inherit !important;
   color: inherit !important;
   border-color: currentColor !important;
+}
+/* Adicione estas regras após as existentes */
+
+/* Botões em modo escuro */
+.dark-contrast-mode .btn-as-link,
+.dark-contrast-mode .btn-as-link:hover {
+  background-color: var(--dm-accent) !important;
+  color: var(--dm-bg) !important;
+  border-color: var(--dm-text) !important;
+}
+
+/* Botões em modo claro */
+.light-contrast-mode .btn-as-link,
+.light-contrast-mode .btn-as-link:hover {
+  background-color: var(--lm-accent) !important;
+  color: var(--lm-bg) !important;
+  border-color: var(--lm-text) !important;
+}
+
+/* Ícones dentro dos botões */
+.dark-contrast-mode .btn-as-link svg,
+.light-contrast-mode .btn-as-link svg {
+  filter: none !important; /* Remove filtros dos ícones */
+  color: inherit !important;
+}
+/* Estados interativos */
+.btn-as-link {
+  transition: all 0.2s ease;
+}
+
+.dark-contrast-mode .btn-as-link:hover,
+.dark-contrast-mode .btn-as-link:focus {
+  outline: 2px solid var(--dm-text) !important;
+}
+
+.light-contrast-mode .btn-as-link:hover,
+.light-contrast-mode .btn-as-link:focus {
+  outline: 2px solid var(--lm-text) !important;
 }
