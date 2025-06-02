@@ -17,7 +17,14 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="  sm:max-w-md">
+      <DialogContent className="
+          w-[95vw] max-w-[95vw]  // Ocupa 95% da tela em mobile
+          sm:w-full sm:max-w-md  // Mantém o tamanho original em desktop
+          max-h-[90vh]           // Altura máxima
+          overflow-y-auto        // Scroll interno
+          top-[50%] translate-y-[-50%] // Centraliza verticalmente
+          px-4 sm:px-6
+        ">
         <DialogHeader className='h-auto'>
             
           <DialogTitle className="text-2xl font-bold flex items-center ">
@@ -72,7 +79,7 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
                 </Button>
               </div> */}
             </div>
-            <TabsList className="grid w-full grid-cols-1">
+            <TabsList className="grid w-full grid-cols-1 overflow-x-auto">
             <TabsTrigger value="color" className="flex items-center gap-2 text-xl">
               <Speech className="flex items-center h-6 w-6" />
               Ajustes de Voz e Navegação
@@ -85,7 +92,7 @@ const AccessibilityModal: React.FC<AccessibilityModalProps> = ({ isOpen, setIsOp
                 <Button 
                   variant='outline' 
                   // onClick={() => setColorMode('mono')}
-                  className="flex flex-col gap-2 h-auto py-3 items-center justify-center"
+                  className="flex flex-col gap-2 h-auto py-3 items-center justify-center break-words"
                 >
                   {/* <div className="w-6 h-6 rounded bg-gray-400 mb-1"></div> */}
                   <Ear className="h-5 w-10" />

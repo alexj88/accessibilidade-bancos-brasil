@@ -1,4 +1,8 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
 /* Monochrome Mode */
+
 .monochrome-mode {
   filter: grayscale(100%) !important;
 }

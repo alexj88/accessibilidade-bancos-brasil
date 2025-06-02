@@ -7,6 +7,8 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+		"./src/styles/accessibility.css",
+		"./src/index.css", // Adicione o caminho do seu CSS
 	],
 	prefix: "",
 	theme: {
