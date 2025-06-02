@@ -1,54 +1,76 @@
+/* Scrollbar (comum a todos os modos) */
 ::-webkit-scrollbar {
   width: 8px;
 }
-/* Monochrome Mode */
 
+/* Variáveis de cores para os modos */
+:root {
+  --dm-bg: #000;
+  --dm-text: #fff;
+  --dm-accent: #ffff00;
+  --lm-bg: #fff;
+  --lm-text: #000;
+  --lm-accent: #0000ff;
+}
+
+/* Classes base para os modos */
 .monochrome-mode {
   filter: grayscale(100%) !important;
 }
 
-/* Dark Contrast Mode */
 .dark-contrast-mode {
-  filter: contrast(150%) !important;
-  background-color: #000 !important;
-  color: #fff !important;
+  background-color: var(--dm-bg) !important;
+  color: var(--dm-text) !important;
 }
 
+.light-contrast-mode {
+  background-color: var(--lm-bg) !important;
+  color: var(--lm-text) !important;
+}
+
+/* Regras compartilhadas entre modos */
+.dark-contrast-mode,
+.light-contrast-mode {
+  filter: contrast(150%) !important;
+}
+
+/* Estilos para elementos específicos */
 .dark-contrast-mode a,
 .dark-contrast-mode button:not(.bg-purple-600),
-.dark-contrast-mode h1,
-.dark-contrast-mode h2,
-.dark-contrast-mode h3,
-.dark-contrast-mode h4,
-.dark-contrast-mode h5,
-.dark-contrast-mode h6 {
-  color: #ffff00 !important;
+.dark-contrast-mode h1, .dark-contrast-mode h2,
+.dark-contrast-mode h3, .dark-contrast-mode h4,
+.dark-contrast-mode h5, .dark-contrast-mode h6,
+.light-contrast-mode a,
+.light-contrast-mode button:not(.bg-purple-600),
+.light-contrast-mode h1, .light-contrast-mode h2,
+.light-contrast-mode h3, .light-contrast-mode h4,
+.light-contrast-mode h5, .light-contrast-mode h6 {
+  color: var(--dm-accent) !important;
 }
 
+.light-contrast-mode a,
+.light-contrast-mode button:not(.bg-purple-600),
+.light-contrast-mode h1, .light-contrast-mode h2,
+.light-contrast-mode h3, .light-contrast-mode h4,
+.light-contrast-mode h5, .light-contrast-mode h6 {
+  color: var(--lm-accent) !important;
+}
+
+/* Estilos para imagens */
 .dark-contrast-mode img,
 .dark-contrast-mode svg {
   filter: brightness(0.8) contrast(120%) !important;
 }
 
-/* Light Contrast Mode */
-.light-contrast-mode {
-  filter: contrast(150%) !important;
-  background-color: #fff !important;
-  color: #000 !important;
-}
-
-.light-contrast-mode a,
-.light-contrast-mode button:not(.bg-purple-600),
-.light-contrast-mode h1,
-.light-contrast-mode h2,
-.light-contrast-mode h3,
-.light-contrast-mode h4,
-.light-contrast-mode h5,
-.light-contrast-mode h6 {
-  color: #0000ff !important;
-}
-
 .light-contrast-mode img,
 .light-contrast-mode svg {
   filter: brightness(0.9) contrast(120%) !important;
+}
+
+/* Aplicação em todos os elementos filhos */
+.dark-contrast-mode *,
+.light-contrast-mode * {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: currentColor !important;
 }
