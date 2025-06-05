@@ -128,7 +128,32 @@ O relatório verifica:
 3. Na seção **"Acessibilidade"**, encontre:  
    - 🟢 **Passou**: Atende aos critérios.  
    - 🟡 **Precisa de melhoria**: Problemas moderados.  
-   - 🔴 **Falhou**: Violações graves da WCAG.  
+   - 🔴 **Falhou**: Violações graves da WCAG.
+   
+## Níveis de Conformidade WCAG e Pontuação de Acessibilidade
+
+### Como funcionam os níveis de conformidade WCAG:
+
+1. **A (Nível A)** - **Mínimo**: Requisitos básicos de acessibilidade (acessível para a maioria, mas com limitações).  
+   - **Pontuação estimada**: Abaixo de 50-60 (varia conforme critérios de avaliação).  
+
+2. **AA (Nível AA)** - **Recomendado**: Acessibilidade boa, atendendo a requisitos mais rigorosos (equilíbrio entre viabilidade e inclusão).  
+   - **Pontuação estimada**: Entre 60 e 89.  
+   - Exemplo: Uma pontuação **77** está nesta faixa.  
+
+3. **AAA (Nível AAA)** - **Ótimo**: Acessibilidade avançada (atende a quase todos os usuários, mas pode ser difícil de implementar totalmente).  
+   - **Pontuação estimada**: 90 ou acima.  
+
+### Observações Importantes:
+- O **`accessibilityScore`** não é um critério oficial da WCAG, mas uma métrica simplificada usada por ferramentas (ex: Lighthouse, Axe).  
+- A WCAG define conformidade por **critérios atendidos**, não por pontuação. Uma nota **77%** indica que a maioria dos requisitos de **AA** foi cumprida, mas alguns podem faltar.  
+- Para confirmar a conformidade real, é necessário auditar manualmente os [critérios de sucesso da WCAG](https://www.w3.org/WAI/WCAG21/quickref/) (ex: contraste de cores, navegação por teclado).  
+
+### Recomendações:
+- Se o objetivo é **AA**, uma pontuação **77** é satisfatória, mas recomenda-se auditar os pontos fracos.  
+- Para **AAA**, são necessários ajustes adicionais (ex: contraste mínimo de 7:1, alternativas detalhadas).  
+
+**Precisa melhorar sua pontuação?** Consulte os critérios específicos abaixo ou solicite uma análise detalhada. 
 
 ### 🛠️ **Exemplos de Correções**  
 - **Problema**: "Contraste de cores insuficiente".  
