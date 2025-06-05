@@ -22,6 +22,7 @@ const Header = () => {
               <a href="#"><li>Home</li></a>
               <a href="#Ranking"><li>Ranking</li></a>
               <a href="#Contatos"><li>Contatos</li></a>
+              <a href="#Ferramentas"><li>Ferramentas</li></a>
             </ul>
             </p>
             </section>

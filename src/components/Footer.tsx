@@ -15,8 +15,14 @@ const Footer = () => {
           <div className="text-sm text-gray-600 text-center md:text-right">
             <p className="mb-1">
               Este ranking é atualizado regularmente com base nas diretrizes WCAG.
+             
             </p>
-            <p className="flex items-center justify-center md:justify-end gap-1">
+            <section id="Ferramentas">
+            <p>*A ferramenta utilizada para obter as pontuações WCAG foi
+            <a href=""> http:/pagespeed.web.dev/</a>
+            </p>
+            </section>
+            <p className="flex items-center mt-3 justify-center md:justify-end gap-1">
               Desenvolvido com <Heart size={16} className="text-accessibility-low" /> por 
               <a href="#" className="text-accessibility-accent hover:underline ml-1">
                 AcessInvest
@@ -31,6 +37,8 @@ const Footer = () => {
           </p>
           <p className="mt-1">
             Os dados deste ranking são baseados em análises independentes de conformidade com WCAG 2.1.
+            
+           
           </p>
         </div>
       </div>
