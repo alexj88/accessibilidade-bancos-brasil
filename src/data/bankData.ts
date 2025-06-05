@@ -15,21 +15,21 @@ export const banks: banco[] = [
     id: 1,
     name: "Banco do Brasil",
     website: "https://www.bb.com.br/site/investimentos",
-    accessibilityScore: 99,
-    wcagCompliance: 'AAA',
+    accessibilityScore: 77, 
+    wcagCompliance: 'AA',
     category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Color contrast compliance'],
-    lastUpdated: "2023-12-15"
+    lastUpdated: "04/06/2025 às 21:58:43"
   },
   {
     id: 2,
     name: "Itaú",
     website: "https://www.itau.com.br/investimentos",
-    accessibilityScore: 92,
+    accessibilityScore: 97,
     wcagCompliance: 'AAA',
     category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Color contrast compliance', 'Text resizing', 'Voice commands'],
-    lastUpdated: "2024-01-20"
+    lastUpdated: "04/06/2025 às 22:11:13"
   },
   {
     id: 3,
@@ -39,17 +39,17 @@ export const banks: banco[] = [
     wcagCompliance: 'AA',
     category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'High contrast mode'],
-    lastUpdated: "2023-11-10"
+    lastUpdated: "04/06/2025 às 22:38:24"
   },
   {
     id: 4,
     name: "Nubank",
     website: "https://nubank.com.br/nu/investimentos",
-    accessibilityScore: 88,
+    accessibilityScore: 85,
     wcagCompliance: 'AA',
     category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Color contrast compliance', 'Simple navigation'],
-    lastUpdated: "2024-02-05"
+    lastUpdated: "04/06/2025 às 22:19:03"
   },
   {
     id: 5,
@@ -59,17 +59,17 @@ export const banks: banco[] = [
     wcagCompliance: 'AA',
     category: 'Corretoras',
     features: ['Screen reader support', 'Keyboard navigation', 'Form labels'],
-    lastUpdated: "2024-01-15"
+    lastUpdated: "04/06/2025 às 22:27:08"
   },
   {
     id: 6,
     name: "BTG Pactual",
     website: "https://www.btgpactual.com",
-    accessibilityScore: 75,
-    wcagCompliance: 'A',
+    accessibilityScore: 96,
+    wcagCompliance: 'AAA',
     category: 'Ambos',
     features: ['Keyboard navigation', 'ALT text for images'],
-    lastUpdated: "2023-10-25"
+    lastUpdated: "04/06/2025 às 22:43:24"
   },
   {
     id: 7,
@@ -85,50 +85,50 @@ export const banks: banco[] = [
     id: 8,
     name: "Santander",
     website: "https://www.santander.com.br/banco/investimentos",
-    accessibilityScore: 80,
-    wcagCompliance: 'AA',
+    accessibilityScore: 91,
+    wcagCompliance: 'AAA',
     category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Color contrast compliance'],
-    lastUpdated: "2023-12-05"
+    lastUpdated: "04/06/2025 às 22:35:59"
   },
   {
     id: 9,
     name: "Rico",
     website: "https://www.rico.com.vc",
-    accessibilityScore: 68,
-    wcagCompliance: 'A',
+    accessibilityScore: 94,
+    wcagCompliance: 'AAA',
     category: 'Corretoras',
     features: ['ALT text for images', 'Descriptive links'],
-    lastUpdated: "2023-09-30"
+    lastUpdated: "04/06/2025 às 22:48:15"
   },
   {
     id: 10,
     name: "Inter",
     website: "https://www.bancointer.com.br",
-    accessibilityScore: 84,
-    wcagCompliance: 'AA',
+    accessibilityScore: 93,
+    wcagCompliance: 'AAA',
     category: 'Ambos',
     features: ['Screen reader support', 'Keyboard navigation', 'ARIA landmarks'],
-    lastUpdated: "2024-01-08"
+    lastUpdated: "04/06/2025 às 22:23:19"
   },
   {
     id: 11,
     name: "Clear",
     website: "https://www.clear.com.br",
-    accessibilityScore: 65,
-    wcagCompliance: 'A',
+    accessibilityScore: 94,
+    wcagCompliance: 'AAA',
     category: 'Corretoras',
     features: ['Keyboard navigation', 'ALT text for images'],
-    lastUpdated: "2023-08-15"
+    lastUpdated: "04/06/2025 às 22:58:28"
   },
   {
     id: 12,
     name: "Modal Mais",
     website: "https://www.modalmais.com.br",
-    accessibilityScore: 60,
-    wcagCompliance: 'A',
+    accessibilityScore: 83,
+    wcagCompliance: 'AA',
     category: 'Corretoras',
     features: ['ALT text for images', 'Basic keyboard navigation'],
-    lastUpdated: "2023-07-20"
+    lastUpdated: "04/06/2025 às 22:59:16"
   }
 ];
