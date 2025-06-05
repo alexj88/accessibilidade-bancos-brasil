@@ -25,7 +25,7 @@ O projeto utiliza uma combinação de:
 - Itaú  
 - Bradesco  
 - Santander  
-- Caixa Econômica Federal  
+- PicPay  
 - Nubank  
 - Banco Inter  
 - Outras instituições financeiras
