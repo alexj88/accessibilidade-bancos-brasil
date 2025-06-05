@@ -67,8 +67,15 @@ const RankingItem = ({ bank, rank }: RankingItemProps) => {
             </span>
         </div>
         <Button asChild className="w-full md:w-auto btn-as-link">
+          {/* https://pagespeed.web.dev/analysis?url */}
           <a href={bank.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
-            Acessar Site <ExternalLink size={16} />
+            Acessar Site <ExternalLink size={13} />
+          </a>
+        </Button>
+        <Button asChild className="w-full md:w-auto bg-blue-600 btn-as-link hover:bg-blue-700">
+          {/* https://pagespeed.web.dev/analysis?url */}
+          <a href={'https://pagespeed.web.dev/analysis?url='+bank.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
+            Verificar Acessibilidade <ExternalLink size={13} />
           </a>
         </Button>
       </div>
