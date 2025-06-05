@@ -1,4 +1,6 @@
 # AcessInvest
+## Como utilizar sem instalação
+Só abrir um navegador de sua preferencia e acessar:
 [acessinvest.vercel.app](https://acessinvest.vercel.app/)
 ## Accessibilidade em Bancos Brasileiros  
 
