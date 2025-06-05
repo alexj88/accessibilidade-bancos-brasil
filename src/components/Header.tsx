@@ -28,7 +28,7 @@ const Header = () => {
             </section>
           </div>
           
-          <p className="text-sm font-size: 0.5rem md:text-base max-w-md text-center md:text-right">
+          <p className="text-sm font-size: 0.5rem md:text-base max-w-md text-center ">
             Avaliamos os principais sites financeiros brasileiros seguindo as diretrizes WCAG de acessibilidade digital.
           </p>
           
