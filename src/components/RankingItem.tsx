@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 interface RankingItemProps {
   bank: banco;
   rank: number;
+  
 }
 
 const RankingItem = ({ bank, rank }: RankingItemProps) => {
@@ -49,11 +50,22 @@ const RankingItem = ({ bank, rank }: RankingItemProps) => {
                   {Math.round(bank.accessibilityScore / 10)}
                 </span>
               </div>
-              <span className="font-bold">{bank.accessibilityScore}%</span>
+              <span className="font-bold">{bank.accessibilityScore}% </span>
+              <br/>
+              
+              
             </div>
           </div>
         </div>
-        
+        <div>
+          
+        </div>
+        <div>
+            <span className="flex flex-col text-wrap">
+            <span>Data de verificação</span>
+            <span>{bank.lastUpdated}</span>
+            </span>
+        </div>
         <Button asChild className="w-full md:w-auto btn-as-link">
           <a href={bank.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
             Acessar Site <ExternalLink size={16} />

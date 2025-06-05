@@ -14,12 +14,12 @@ export const banks: banco[] = [
   {
     id: 1,
     name: "Banco do Brasil",
-    website: "https://www.bb.com.br/site/investimentos",
-    accessibilityScore: 77, 
+    website: "https://www.bb.com.br/site/investimentos/cdb/",
+    accessibilityScore: 82, 
     wcagCompliance: 'AA',
     category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Color contrast compliance'],
-    lastUpdated: "04/06/2025 às 21:58:43"
+    lastUpdated: "05/06/2025 às 00:31:29"
   },
   {
     id: 2,
@@ -73,13 +73,13 @@ export const banks: banco[] = [
   },
   {
     id: 7,
-    name: "Caixa Econômica Federal",
-    website: "https://www.caixa.gov.br",
+    name: "PicPay",
+    website: "https://picpay.com/investimentos",
     accessibilityScore: 89,
     wcagCompliance: 'AA',
     category: 'Banco',
     features: ['Screen reader support', 'Keyboard navigation', 'Text alternatives', 'Form labels', 'Skip navigation'],
-    lastUpdated: "2024-02-12"
+    lastUpdated: "04/06/2025 às 23:47:15"
   },
   {
     id: 8,
