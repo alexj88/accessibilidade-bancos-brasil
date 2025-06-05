@@ -66,16 +66,10 @@ O único requisito é ter [Node.js](https://nodejs.org/) (recomendado v18+) , np
 2. 🧪 Realize testes em sites/apps bancários  
 3. 📝 Documente suas descobertas  
 4. 🔄 Envie um *pull request* com suas contribuições  
-
-## ⚙️ Requisitos  
-
-- Conhecimento básico de acessibilidade web
-  ### ferramenta utilizada
-  - [PageSpeed Insights](https://pagespeed.web.dev/) - Ferramenta de Análise de Performace e Acessibilidade
-- Ferramentas brasileiras de acessibilidade:
+    
+- Ferramentas brasileiras de acessibilidade outras referências:
   
-  - [ASES Web](https://asesweb.governoeletronico.gov.br/) - Avaliador e Simulador de Acessibilidade Sítios
-  - [DaSilva](https://www.dasilva.org.br/) - Ferramenta de avaliação de acessibilidade
+  - [ASES Web](https://asesweb.governoeletronico.gov.br/) - Avaliador e Simulador de Acessibilidade Sítios  
   - [NVDA em Português](https://www.nvaccess.org/download/) - Leitor de tela gratuito
   - [VLibras](https://www.vlibras.gov.br/) - Suite de ferramentas para acessibilidade de surdos
 - Dispositivos com diferentes configurações de acessibilidade
