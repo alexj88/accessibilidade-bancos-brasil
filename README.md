@@ -16,7 +16,7 @@ Este projeto visa analisar e melhorar a acessibilidade digital nos bancos do Bra
 O projeto utiliza uma combinação de:  
 
 1. **Avaliação técnica** com ferramentas automatizadas  
-2. **Testes com usuários** reais com diferentes tipos de deficiência  
+2. **Ferramentas para usuários** reais com diferentes tipos de deficiência  
 3. **Análise manual** de conformidade com as diretrizes WCAG.
 
 ## 🏦 Bancos Analisados  
